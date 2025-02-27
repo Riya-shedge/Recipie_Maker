@@ -1,0 +1,190 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8ef;
+}
+
+/* Main container */
+.main {
+    background-color: #fff;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Recipe Title */
+h1.recipe-title {
+    text-align: center;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/*Image Styling*/ 
+#cake-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/*Button Styling*/ 
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #00bcd4;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+}
+
+.btn1, .btn2 {
+    margin: 20px 0;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Ingredients Section*/ 
+.ingredients ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ingredients li {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.ingredients li::before {
+    content: "✔";
+    color: green;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.3em;
+}
+
+/* Slider Section */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.step {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+
+.step img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.step p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Navigation Buttons*/ 
+.prev, .next {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust so the arrows align with the slider*/ 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px; /* Position the left arrow on the left side */
+}
+
+.next {
+    right: 10px; /* Position the right arrow on the right side */
+}
+
+/* Button hover effect */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Styling for Preparation Time and Serving Size*/
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1.recipe-title {
+        font-size: 2.5em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    #cake-img {
+        max-width: 100%;
+    }
+
+    .step img {
+        max-width: 100%;
+    }
+} 
+
+#details{
+    font-weight: 900;
+    color: #555555;
+}

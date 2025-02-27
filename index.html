@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipie Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="recipe-title">Chocolate Cake</h1>
+        <img src="images/cake.jpg" alt="cake" id="cake-img">
+
+        <div class="ingredients">
+            <h2><button class="btn1 btn" onclick="toggleIngredients()">Ingredients</button></h2>
+            <ul id="ingredients-list" style="display:none;">
+                <li>1 ¾ cups : Flour</li>
+                <li>1 ½ cups : Sugar</li>
+                <li>¾ cup : Cocoa powder</li>
+                <li>1 ½ tsp : Baking powder</li>
+                <li>1 ½ tsp : Baking soda</li>
+                <li>1 tsp : Salt</li>
+                <li>2 eggs</li>
+                <li>1 cup : Milk</li>
+                <li>½ cup : Oil</li>
+                <li>2 tsp : Vanilla extract</li>
+                <li>1 cup : Water</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2><button class="btn2 btn">Instructions to cook</button></h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="step">
+                        <p>Preheat the Oven: Preheat your oven to 350°F (175°C). Grease and flour two 9-inch round cake pans or line them with parchment paper.</p>
+                        <img src="images/step1.jpg" alt="step1">
+                    </div>
+
+                    <div class="step">
+                        <p>Mix Dry Ingredients: In a large bowl, whisk together the flour, sugar, cocoa powder, baking powder, baking soda, and salt.</p>
+                        <img src="images/step2.jpg" alt="step2">
+                    </div>
+                    
+                    <div class="step">
+                        <p>Add Wet Ingredients: Add the eggs, milk, vegetable oil, and vanilla extract to the dry ingredients. Mix well until smooth.</p>
+                        <img src="images/step3.jpg" alt="step3">
+                    </div>
+
+                    <div class="step">
+                        <p>Add Boiling Water: Stir in the boiling water until the batter becomes smooth and thin.</p>
+                        <img src="images/step4.jpg" alt="step4">
+                    </div>
+
+                    <div class="step">
+                        <p>Bake the Cake: Pour the batter evenly into the prepared cake pans. Bake for 30-35 minutes, or until a toothpick comes out clean.</p>
+                        <img src="images/step5.jpg" alt="step5">
+                    </div>
+
+                    <div class="step">
+                        <p>Cool the Cakes: Allow the cakes to cool for 10 minutes before transferring them to wire racks to cool completely.</p>
+                        <img src="images/step6.jpg" alt="step6">
+                    </div>
+
+                    <div class="step">
+                        <p>Frost the Cake: Once the cakes are cool, frost them with your favorite frosting (chocolate buttercream works great).</p>
+                        <img src="images/step7.jpg" alt="step7">
+                    </div>
+
+                    <div class="step">
+                        <p>Add your favorite toppings: Make your cake more attractive with chocolates or biscuits or donuts and enjoy the cake with your family.</p>
+                        <img src="images/cake.jpg" alt="step8">
+                    </div>
+                </div>
+                <button class="prev" onclick="showPreviousSlide()">❮</button>
+                <button class="next" onclick="showNextSlide()">❯</button>
+            </div>
+            
+        </div>
+
+        <div>
+            <h2 id="details">Preparation Time</h2>
+            <p id="info">45:00 mins</p>
+            <h2 id="details">Serving Size</h2>
+            <p id="info">5-8 people</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
